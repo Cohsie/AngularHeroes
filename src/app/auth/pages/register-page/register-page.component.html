@@ -16,9 +16,13 @@
     <input type="password" matInput placeholder="Contraseña">
   </mat-form-field>
 
-  <button mat-form mat-flat-button color="primary" (click)="navigateToRegister()"><!--primary en minúscula por favor-->
+  <button mat-form mat-flat-button color="primary"><!--primary en minúscula por favor-->
     <mat-icon>save</mat-icon>
     Crear cuenta
   </button>
+
+  <div class="flex justify-content-end mt-5">
+    <a routerLink="/auth/login">Ya tengo cuenta</a>
+  </div>
 
 </div>
