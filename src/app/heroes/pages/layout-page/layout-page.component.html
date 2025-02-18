@@ -1,2 +1,57 @@
-<p>layout-page works!</p>
-<router-outlet></router-outlet>
+<mat-sidenav-container fullscreen>
+
+  <mat-sidenav #sidenav mode="push" [ngStyle]="{ width: '250px'}">
+    <mat-toolbar color="warn">
+      <span>Menú</span>
+      <span class="spacer"></span>
+      <button mat-icon-button (click)="sidenav.toggle()">
+        <mat-icon>menu</mat-icon>
+      </button>
+    </mat-toolbar>
+
+    <mat-nav-list>
+      <mat-list-item>
+        <mat-icon matListIcon>save</mat-icon>
+        guardar
+      </mat-list-item>
+
+      <mat-list-item>
+        <button mat-button mat-button (click)="redireccion('Listado'); sidenav.toggle()">
+          <mat-icon matListIcon>label</mat-icon>
+          Listado
+        </button>
+      </mat-list-item>
+
+      <mat-list-item>
+        <button mat-button mat-button (click)="redireccion('Añadir'); sidenav.toggle()">
+          <mat-icon matListIcon>add</mat-icon>
+          Añadir
+        </button>
+      </mat-list-item>
+
+      <mat-list-item>
+        <button mat-button mat-button (click)="redireccion('Buscar'); sidenav.toggle()">
+          <mat-icon matListIcon>search</mat-icon>
+          Buscar
+        </button>
+      </mat-list-item>
+
+    </mat-nav-list>
+
+  </mat-sidenav>
+
+  <mat-toolbar color="primary">
+    <button mat-icon-button (click)="sidenav.toggle()">
+      <mat-icon>menu</mat-icon>
+    </button>
+    <span class="spacer"></span>
+    <button mat-button>
+      Logout
+    </button>
+  </mat-toolbar>
+
+  <div class="container">
+    <router-outlet></router-outlet>
+  </div>
+
+</mat-sidenav-container>
