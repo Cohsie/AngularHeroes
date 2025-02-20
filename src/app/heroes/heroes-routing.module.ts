@@ -10,7 +10,6 @@ import { HeroPageComponent } from './pages/hero-page/hero-page.component';
 
 const routes: Routes = [
   {
-    //localhost:4200/auth/
     path: '',
     component: LayoutPageComponent,
     children:[

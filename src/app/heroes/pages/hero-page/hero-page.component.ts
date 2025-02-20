@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { heroe } from '../../interfaces/hero.interface'
+
 
 @Component({
   selector: 'app-hero-page',
@@ -7,5 +9,11 @@ import { Component } from '@angular/core';
   ]
 })
 export class HeroPageComponent {
+  public hero!: heroe
 
+  ngOnInit(): void{
+  if (!this.hero) throw new Error("No está")
+  }
 }
+
+
