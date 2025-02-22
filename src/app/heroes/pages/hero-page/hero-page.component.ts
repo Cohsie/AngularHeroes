@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { heroe } from '../../interfaces/hero.interface'
 import { HeroesService } from '../../services/heroes.service';
 import { ActivatedRoute, Router } from '@angular/router';
-import { switchMap } from 'rxjs';
+import { delay, switchMap } from 'rxjs';
 
 
 @Component({
@@ -29,7 +29,7 @@ export class HeroPageComponent implements OnInit{
       ).subscribe( hero => {
         if(!hero) return this.router.navigate(['/heroes/list']);
 
-        this.hero= this.hero;
+        this.hero= hero;
         console.log(hero);
 
         return;

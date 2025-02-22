@@ -4,7 +4,8 @@ export interface heroe{
   publisher: String,
   alter_ego: String,
   first_appearance: String,
-  characters: String
+  characters: String;
+  alt_img?:string;
 }
 
 export enum Publisher{
