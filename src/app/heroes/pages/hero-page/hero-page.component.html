@@ -35,5 +35,11 @@
       <mat-list-item>{{ hero.alter_ego }}</mat-list-item>
     </mat-list>
   </mat-card-content>
+
+  <button mat-button mat-raised color="primary" [routerLink]="['/heroes/list']">
+    <mat-icon>arrow_back_ios</mat-icon>
+    Volver
+  </button>
+
 </mat-card>
 </div>
