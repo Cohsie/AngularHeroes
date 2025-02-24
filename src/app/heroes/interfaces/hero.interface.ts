@@ -1,12 +1,12 @@
 export interface heroe{
-  id: String,
-  superhero: String,
-  publisher: String,
-  alter_ego: String,
-  first_appearance: String,
-  characters: String;
+  id: string,
+  superhero: string,
+  publisher: Publisher,
+  alter_ego: string,
+  first_appearance: string,
+  characters: string;
   alt_img?:string;
-}
+}//Aquí los string deben ir en minúscula
 
 export enum Publisher{
   DCComics = "DC Comics",

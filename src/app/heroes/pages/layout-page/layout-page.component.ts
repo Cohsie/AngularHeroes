@@ -25,10 +25,10 @@ export class LayoutPageComponent {
       }
     }
   }
-
+/*
   public hero!: heroe
 
   ngOnInit(): void{
     if (!this.hero) throw new Error("No está")
-    }
+    }*/
 }
