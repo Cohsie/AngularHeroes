@@ -44,19 +44,24 @@
             <input type="text" matInput formControlName="alt_img"/>
           </mat-form-field>
 
+          <div class="flex justify-content-between">
+            <button mat-flat-button color="warn">Borrar</button>
+            <button mat-flat-button color="primary" [disabled]="!heroForm.valid">Guardar</button>
+          </div>
         </form>
-        <div class="flex justify-content-between">
-          <button mat-flat-button color="warn">Borrar</button>
-          <button mat-flat-button color="primary" [disabled]="!heroForm.valid">Guardar</button>
-        </div>
+
       </mat-card-content>
     </mat-card>
 
   </div>
   <div class="col-12 sm:col-6">
     <mat-card>
-      <img src="" alt="Imagen del héroe" mat-card-image>
+      <img [src]="currentHero | heroImage" alt="Imagen del héroe" mat-card-image>
     </mat-card>
   </div>
 
 </div>
+
+<pre>
+  {{ currentHero | json }}
+</pre>

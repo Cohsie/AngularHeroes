@@ -174,6 +174,15 @@
       "alter_ego": "Natasha Romanov",
       "first_appearance": "Whhhat Comics #69",
       "characters": "Natasha Romanov"
+    },
+    {
+      "id": "Cpd78Ho",
+      "superhero": "SuperJose",
+      "publisher": "DC Comics",
+      "alter_ego": "Jose",
+      "first_appearance": "2024",
+      "characters": "Junior",
+      "alt_img": "https://i.pinimg.com/736x/84/9d/47/849d471ea451e953782fedbc30b790ce.jpg"
     }
   ]
 }
